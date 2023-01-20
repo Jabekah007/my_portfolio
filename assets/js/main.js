@@ -1,13 +1,23 @@
 /*=============== SHOW SIDEBAR ===============*/
-
+const navMenu = document.getElementById('sidebar'),
+      navToggle = document.getElementById('nav-toggle'),
+      navClose = document.getElementById('nav-close')
 
 /*===== SIDEBAR SHOW =====*/
 /* Validate If Constant Exists */
-
+if(navToggle){
+    navToggle.addEventListener("click",() =>{
+        navMenu.classList.add('show-sidebar');
+    })
+}
 
 /*===== SIDEBAR HIDDEN =====*/
 /* Validate If Constant Exists */
-
+if(navClose){
+    navClose.addEventListener("click",() =>{
+        navMenu.classList.remove('show-sidebar');
+    })
+}
 
 /*=============== SKILLS TABS ===============*/
 
@@ -132,7 +142,7 @@ function navHighlighter(){
     //How we loop through sections to get height,top and ID values for each
     sections.forEach(current =>{
         const sectionHeight = current.offsetHeight;
-        const sectionTop = current.offsetTop;
+        const sectionTop = current.offsetTop - 50;
         sectionId = current.getAttribute("id");
         /* - If our current scroll position enters the space where current section on screen is,
         corresponding navigation link,else remove it.
