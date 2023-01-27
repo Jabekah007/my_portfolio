@@ -839,26 +839,29 @@
             
           </div>
           <div  class="contact_content">
-            <form action="index_submit" method="get" accept-charset="utf-8" class="contact_form">
+            <form action="https://formsubmit.co/jabekah007@gmail.com" method="get" accept-charset="utf-8" class="contact_form">
+      
               <div class="input_container">
-                <input type="text" class="input" placeholder="Username" name="">
+                <input type="text" class="input" placeholder="Fullname" name="name" required>
                 
               </div>
 
               <div class="input_container">
-                <input type="email" class="input" placeholder="email" name="">
+                <input type="email" class="input" placeholder="email address" name="email" required>
                 
               </div>
               
               <div class="input_container">
-                <input type="tel" class="input" placeholder="conatct"  name="">
+                <input type="tel" class="input" placeholder="conatct"  name="contact" required>
                
               </div>
 
               <div class="input_container textarea">
-                 <textarea name="" id="" placeholder="message" class="input"></textarea>
+                 <textarea name="message" id="" placeholder="write your message here..." class="input" required></textarea>
                 
               </div>
+              <input type="hidden" name="_next" value="https://abekah-justice.vercel.app/thanks.html">
+              <input type="hidden" name="_subject" value="New email woo!!!">
               <button type="submit" class="button" ><i class="uil uil-navigator "></i> Send Message</button>
             </form>
           </div>
