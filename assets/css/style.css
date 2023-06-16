@@ -818,7 +818,7 @@ h1 > span{
 .services_content{
     position: relative;
     background-color: var(--box-color);
-    padding: 6rem 0 2rem 2.5rem;
+    padding: 2rem 0 2rem 2.5rem;
     border-radius: .25rem;
     height: inherit;
 }
@@ -1039,6 +1039,7 @@ h1 > span{
     column-gap: 3rem;
     justify-content: center;
     align-items: center;
+
 }
 
 .contact_info{
@@ -1096,6 +1097,7 @@ h1 > span{
     position: relative;
     margin-top: .1rem;
     margin-bottom: 1.9rem;
+
 }
 
 .input{
@@ -1111,12 +1113,12 @@ h1 > span{
     transition: .3s;
     padding: .6rem 1.2rem;
     font-family: 'Poppins', sans-serif;
+    
 }
 
 textarea.input{
     padding: .8rem 1.2rem;
     min-height: 140px;
-    border-height:.50rem;
     resize: none;
     font-family: 'Poppins', sans-serif;
 }
