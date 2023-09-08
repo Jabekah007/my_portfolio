@@ -64,6 +64,10 @@ function activeWork(){
 
 
 /*===== Work Popup =====*/
+/* This code is adding an event listener to the entire document, listening for a click event. When a
+click event occurs, it checks if the clicked element has a class of "work_button". If it does, it
+calls the functions `togglePortfolioPopup()` and `portfolioItemDetails()` with the parent element of
+the clicked element as an argument. */
 document.addEventListener("click",(e)=>{
     if (e.target.classList.contains("work_button")) {
         togglePortfolioPopup();
@@ -71,6 +75,9 @@ document.addEventListener("click",(e)=>{
     }
 })
 
+/**
+ * The function toggles the "open" class on the element with the class "portfolio_popup".
+ */
 function togglePortfolioPopup(){
     document.querySelector(".portfolio_popup").classList.toggle("open");
 }
